@@ -1,0 +1,221 @@
+/*for seeing divs*/
+.borders {
+  border: 3px solid #f700ff;
+}
+
+/*dynamic text sizing*/
+:root {
+  --fs-head: 2.5em;
+  --fs-parag: 1em;
+  --fs-sub: 1em;
+}
+@media (min-width: 55em) {
+  /*once screen size decrease text size decrease*/
+  :root {
+    --fs-head: 5em;
+    --fs-parag: 1.75em;
+    --fs-sub: 0.5em;
+  }
+}
+
+/*default text styles*/
+.header {
+  font-size: var(--fs-head);
+  /*max-width: 30ch;*/
+  line-height: 1.1;
+  font-weight: 900;
+
+  color: white;
+  font-family: Inter, serif;
+}
+.paragraph {
+  font-size: var(--fs-parag);
+  line-height: 0.95;
+
+  color: white;
+  font-family: Inter, serif;
+}
+.subtitle {
+  font-size: 2em;
+  /*padding: 5%;*/
+  padding-bottom: 5%;
+  margin-right: 10%;
+  font-weight: lighter;
+  text-align: left;
+  line-height: 0.95;
+  color: white;
+  margin-top: 40px;
+
+  /*font-family: Inter, sans-serif;*/
+  /*user-select: none;*/
+}
+.timeDate {
+  font-size: 1.3em;
+  /*padding: 5%;*/
+  padding-bottom: 5%;
+  /*margin-right: 10%;*/
+  font-weight: lighter;
+  text-align: left;
+  line-height: 0.85;
+  color: white;
+  /*margin-top: 40px;*/
+
+  /*font-family: Inter, sans-serif;*/
+  /*user-select: none;*/
+}
+
+.image-area {
+  background-image: url("../../public/brighamBG.png");
+  background-position: center;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  /*background-attachment: fixed;*/
+  background-size: 100% 100%;
+}
+
+/*Background Animation*/
+.gradient {
+  width: auto;
+  height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgba(9, 72, 171, 0.5),
+      rgba(9, 31, 112, 0.5)
+    )
+    0 0 / 1000% no-repeat;
+  animation: gradient_ani 15s ease infinite;
+  align-items: center;
+  /*  flex-direction: row;*/
+}
+
+/*random spacing divs*/
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  /*justify-items: stretch;*/
+  /*align-content: space-between;*/
+  /*height: 100vh;*/
+}
+.disclaimer {
+  margin: 10% 0 0 0;
+  font-size: 1em;
+  line-height: 0.9;
+  font-weight: normal;
+
+  color: #cecfea;
+  /*font-family: Inter, serif;*/
+}
+.rightBox {
+  height: 100vh;
+  justify-content: space-between;
+}
+.tempBox {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /*margin: 2% 0;*/
+}
+.wordPad {
+  padding: 0 5%;
+}
+.boxPad {
+  padding: 5% 5%;
+  align-content: space-evenly;
+}
+
+.button-class {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 2%;
+
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/*Map button*/
+.toMap {
+  align-items: center;
+  margin-right: 8%;
+  padding: 2%;
+  /*animation: bounce 3.5s ease-in-out infinite;*/
+  /*border-radius: 30px;*/
+  /*background-color: rgba(103, 174, 231, 0.94);*/
+  transition:
+    box-shadow 0.1s ease-in-out,
+    background-color 0.1s ease-in-out;
+  /*box-shadow: 7px 7px 0;*/
+  border-radius: 7px;
+}
+
+/*Button Hover State*/
+.toMap:hover {
+  background-color: rgba(29, 148, 232, 0.94);
+  border-radius: 7px;
+  /*color: #005db4;*/
+  /*box-shadow: #024d88;*/
+}
+
+.fade-in-out {
+  animation: fadeInOut 3s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.spacing {
+  align-content: start;
+  padding-left: 20%;
+}
+
+@keyframes gradient_ani {
+  0% {
+    background-position:
+      0 30%,
+      0 0;
+  }
+  50% {
+    background-position:
+      100% 70%,
+      0 0;
+  }
+  100% {
+    background-position:
+      0 30%,
+      0 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  75% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.hero-staff-login a:hover {
+  cursor: pointer;
+}

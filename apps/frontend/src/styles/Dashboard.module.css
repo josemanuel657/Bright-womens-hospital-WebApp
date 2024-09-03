@@ -1,0 +1,162 @@
+.pageContainer {
+  height: 100vh;
+  width: 150%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(1% + 70px) 0 1% calc(1% + 55px);
+  /*overflow-y: hidden !important;*/
+  position: fixed;
+  background: linear-gradient(
+      to bottom,
+      rgba(226, 244, 255, 0.45),
+      rgba(227, 247, 255, 0.49)
+    ),
+    url("../../public/brighamWebsiteGeometricBG.jpg");
+  /*background-size: 100% 100%;*/
+}
+
+.currentRequestsContainer {
+  max-height: calc(100vh - 110px);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  border: 5px solid white;
+  margin-right: 1%;
+}
+
+.collapsed {
+  width: 55vw;
+}
+
+.expanded {
+  width: 94vw;
+}
+
+.requestFormContainer {
+  max-height: calc(100vh - 100px);
+  width: 38vw;
+  min-width: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  border: 5px solid white;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #012d5a;
+  /*width: 100%;*/
+}
+
+.requestFormHeader {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh 4% 2vh 4%;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8.5vh;
+  max-height: 9vh;
+}
+
+.currentRequestsHeader {
+  margin: 2vh 4% 1vh 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 8.5vh;
+  max-height: 9vh;
+}
+
+.divider {
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+.compactDivider {
+  margin: 1% 4% 0 4%;
+}
+
+.inputRow {
+  padding: 0 4%;
+  margin-top: 2%;
+}
+
+.doubleInputRow {
+  display: flex;
+  flex-direction: row;
+  padding: 0 4%;
+}
+
+.priorityStatus {
+  margin-top: 2%;
+}
+
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+}
+
+.tooltip {
+  text-align: center;
+  font-style: italic;
+  color: darkgray;
+}
+
+.filterSelectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4% 2%;
+  width: 40vw;
+}
+
+.tableMutators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 4% 2%;
+  align-items: end;
+}
+
+.filterMenu {
+  display: flex;
+  flex-direction: row;
+  /*width: 40%;*/
+}
+
+.searchMenu {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.filterMenuText {
+  margin-bottom: 8px;
+  color: dimgray;
+}
+
+.table {
+  /*height: 50%;*/
+  overflow-y: auto;
+}
+
+.additionalInfo {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
+}

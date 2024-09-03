@@ -1,0 +1,35 @@
+.sanDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  flex-direction: column;
+}
+
+.requestForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  padding: 6vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.twoInputRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+  color: #012d5a;
+}

@@ -1,0 +1,51 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%;
+  padding: 2vh 2vw;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buttonCluster {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+}
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: 700;
+  color: #012d5a;
+}
+
+.pageSubheading {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #012d5a;
+}
+
+.tabs {
+  padding: 0 2vw;
+}

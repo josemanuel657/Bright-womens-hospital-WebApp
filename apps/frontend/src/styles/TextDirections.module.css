@@ -1,0 +1,90 @@
+.directionsContainer {
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  right: 0;
+  margin-right: 8vw;
+  margin-bottom: 3vh;
+
+  min-width: 25vw;
+}
+
+.textDirectionsContainer {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow:
+    0 14px 21px -5px rgba(0, 0, 0, 0.1),
+    0 5px 26px 4px rgba(0, 0, 0, 0.07),
+    0 8px 38px 7px rgba(0, 0, 0, 0.06);
+}
+
+.directionsHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 16px;
+  align-items: center;
+}
+
+.directionsHeader h5 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+  color: #012d5a;
+}
+
+.directionsFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px;
+  align-items: center;
+}
+
+.directionsFooter p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.directionsContent {
+  background-color: #f2f2f2;
+  padding: 8px 16px;
+}
+
+.directionsContent p {
+  font-size: 1rem;
+}
+
+.directionsText {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.stepNumber {
+  width: 1rem;
+}
+
+.textDirectionFloorGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 16px 0;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-top: 1vh;
+  box-shadow:
+    0 14px 21px -5px rgba(0, 0, 0, 0.1),
+    0 5px 26px 4px rgba(0, 0, 0, 0.07),
+    0 8px 38px 7px rgba(0, 0, 0, 0.06);
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

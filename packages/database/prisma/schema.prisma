@@ -1,0 +1,147 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider   = "prisma-client-js"
+  output     = "../.prisma/client"
+  engineType = "binary"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL")
+}
+
+model BreakOutHighScore {
+  HSID      Int      @id @default(autoincrement())
+  initial   String
+  time      Int
+  character String
+  date      DateTime
+}
+
+model BrighamBreakoutUsers {
+  userID       Int     @id @default(autoincrement())
+  username     String  @unique
+  highscore    Int
+  joeUnlocked  Boolean
+  wongUnlocked Boolean
+}
+
+model weather {
+  WID  Int    @id
+  temp Float
+  date String
+  time String
+}
+
+model Edge {
+  edgeID      String @id
+  startNodeID String
+  endNodeID   String
+
+  startNode Node @relation("startNode", fields: [startNodeID], references: [nodeID], onDelete: Cascade)
+  endNode   Node @relation("endNode", fields: [endNodeID], references: [nodeID], onDelete: Cascade)
+}
+
+model Node {
+  nodeID    String @id
+  xcoord    Int
+  ycoord    Int
+  floor     String
+  building  String
+  nodeType  String
+  longName  String
+  shortName String
+
+  startEdges      Edge[]           @relation("startNode")
+  endEdges        Edge[]           @relation("endNode")
+  ServiceRequests ServiceRequest[]
+}
+
+model ServiceRequest {
+  SRID                           Int                             @id @default(autoincrement())
+  employeeEmail                  String
+  priority                       String
+  location                       String
+  status                         String
+  serviceType                    String
+  description                    String
+  FlowerServiceRequest           FlowerServiceRequest?           @relation("FlowerServiceRequest")
+  RoomSchedulingRequest          RoomSchedulingRequest?          @relation("RoomSchedulingRequest")
+  MedicalDeviceServiceRequest    MedicalDeviceServiceRequest?    @relation("MedicalDeviceServiceRequest")
+  GiftServiceRequest             GiftServiceRequest?             @relation("GiftServiceRequest")
+  MedicineDeliveryServiceRequest MedicineDeliveryServiceRequest? @relation("MedicineDeliveryServiceRequest")
+  ReligiousServiceRequest        ReligiousServiceRequest?        @relation("ReligiousServiceRequest")
+  FoodDeliveryServiceRequest     FoodDeliveryServiceRequest?     @relation("FoodDeliveryServiceRequest")
+  Employee                       Employee                        @relation(fields: [employeeEmail], references: [employeeEmail], onDelete: Cascade)
+  Node                           Node                            @relation(fields: [location], references: [nodeID], onDelete: Cascade)
+}
+
+model Employee {
+  employeeEmail           String           @id
+  employeeFirstName       String
+  employeeLastName        String
+  employeeFullName        String
+  employeePosition        String
+  employeePermission      String
+  numberOfServiceRequests Int
+  employeeID              Int
+  ServiceRequests         ServiceRequest[]
+}
+
+model FlowerServiceRequest {
+  ServiceRequest ServiceRequest @relation("FlowerServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  flowerType     String
+  senderName     String
+  receiverName   String
+  deliveryDate   String
+}
+
+model RoomSchedulingRequest {
+  ServiceRequest ServiceRequest @relation("RoomSchedulingRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  startTime      String // dont worry about this really being a DateTime, thats something we implement next time
+  endTime        String
+}
+
+model MedicalDeviceServiceRequest {
+  ServiceRequest ServiceRequest @relation("MedicalDeviceServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  deviceName     String
+  deviceQuantity String
+}
+
+model ReligiousServiceRequest {
+  ServiceRequest ServiceRequest @relation("ReligiousServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  religionName   String
+  objectName     String
+}
+
+model GiftServiceRequest {
+  ServiceRequest ServiceRequest @relation("GiftServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  senderName     String
+  receiverName   String
+  giftType       String
+  deliveryDate   String
+}
+
+model FoodDeliveryServiceRequest {
+  ServiceRequest ServiceRequest @relation("FoodDeliveryServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  foodItem       String
+  foodQuantity   String
+  utensilItem    String
+  deliveryTime   String
+}
+
+model MedicineDeliveryServiceRequest {
+  ServiceRequest ServiceRequest @relation("MedicineDeliveryServiceRequest", fields: [SRID], references: [SRID])
+  SRID           Int            @id
+  medicineType   String
+  dosageType     String
+  dosageAmount   String
+}

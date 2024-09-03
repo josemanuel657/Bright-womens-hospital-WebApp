@@ -1,0 +1,57 @@
+.csv-page-container {
+  padding-top: 70px;
+  /*width: calc(100vw - 55px);*/
+}
+
+.input-title-text,
+.page-title {
+  font-weight: bold;
+  color: #012d5a;
+}
+
+.page-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.table-title {
+  color: #012d5a;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.upload-descriptor-text {
+  margin-bottom: 0;
+}
+
+.tables-container {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.footer {
+  color: gray;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  padding: 50px;
+  user-select: none;
+}
+
+.btn-cluster {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}

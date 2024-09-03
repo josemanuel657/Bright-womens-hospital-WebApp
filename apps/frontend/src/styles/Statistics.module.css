@@ -1,0 +1,59 @@
+.pageContainer {
+  padding: calc(1% + 70px) 1% 1% calc(1% + 55px);
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../public/brighamWebsiteGeometricBG.jpg");
+}
+
+.statisticsBox {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #012d5a;
+}
+
+.graphsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+}
+
+.barCharts {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-right: lightgray 1px solid;
+  padding-right: 2%;
+}
+
+.pieCharts {
+  width: 35%;
+  padding-left: 2%;
+}
+
+.graphTitle {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #012d5a;
+}
+
+.chartHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

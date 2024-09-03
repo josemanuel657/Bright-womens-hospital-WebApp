@@ -1,0 +1,26 @@
+.pageContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(1% + 70px) 0 1% calc(1% + 55px);
+  position: fixed;
+  background: white;
+  overflow-y: auto;
+}
+
+.disclosureP {
+  font-size: 0.8em;
+  padding-top: 7vh;
+  padding-left: 3vw;
+  padding-bottom: 5vh;
+  margin-right: 0;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 0.95;
+  color: #f00e0e;
+  //font-family: Inter, sans-serif;
+  user-select: none;
+}

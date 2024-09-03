@@ -1,0 +1,40 @@
+.tableAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Inter", serif;
+}
+
+.requestsHeader {
+  background-color: #012d5a;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: "Inter", serif;
+  text-align: center;
+}
+
+.boxBehindTable {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.filterHeader {
+  font-size: 1.5em;
+}
+
+.filterOption {
+  font-size: 1.2em;
+  padding-right: 10px;
+}
+
+.requests-page-container {
+  width: 80vw;
+  margin-left: 20vw;
+  padding: 2vw;
+}

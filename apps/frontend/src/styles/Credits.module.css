@@ -1,0 +1,93 @@
+/* Credits.module.css */
+.pageContainer {
+  position: relative;
+  text-align: center;
+  background-image: url("../../public/brighamBG.png"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full height of the viewport */
+  padding: 5%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between cards */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 80vw; /* Relative to the width of the viewport */
+  max-width: 300px; /* Maximum width */
+  height: 60vh; /* Relative to the height of the viewport */
+  max-height: 400px; /* Maximum height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardHeader img {
+  width: auto; /* Scales image width automatically */
+  max-width: 80%; /* Maximum width relative to the cardHeader */
+  height: 100%; /* Scales image height automatically */
+  max-height: 100px; /* Maximum height */
+  object-fit: contain;
+}
+
+.cardHeader {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-between; /* This will push the arrows to the sides */
+  align-items: center; /* Aligns arrows vertically in the middle */
+  width: 100%; /* Ensure the container spans the full width of its parent */
+  padding: 10px; /* Add padding for better spacing and touch target size */
+  bottom: 5%;
+  top: 95%;
+}
+
+.divBetweenArrowsAndText {
+  display: flex;
+  flex-grow: 1;
+}
+
+.pageTitle {
+  position: relative;
+  font-size: 5em;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 4%;
+  margin-top: 3%;
+  z-index: 2;
+}

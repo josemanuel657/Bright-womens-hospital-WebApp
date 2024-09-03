@@ -1,0 +1,123 @@
+#navbar {
+  height: 100%;
+  position: fixed;
+  align-self: start;
+  background-color: #012d5a;
+  color: white;
+}
+
+#inner-navbar-wrapper {
+  padding: 20px;
+}
+
+#navbar-header {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1;
+}
+
+#nav-title {
+  padding-right: 0;
+  user-select: none;
+}
+
+#nav-img {
+  width: 50px;
+  height: 50px;
+  user-select: none;
+}
+
+.rectangle {
+  height: 7px;
+  width: 100%;
+  background-color: #b0abab;
+}
+
+#nav-body {
+  text-align: start;
+}
+
+.nav-links {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+.nav-links-inner {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 5%;
+  margin-left: 8%;
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+.caret-up {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+
+.dropdown {
+  max-height: 0;
+  overflow: hidden;
+  /*transition: max-height 0.5s ease-out;*/
+}
+
+.dropdown.open {
+  max-height: 100%; /* Adjust this value as needed */
+}
+
+.collapsed {
+  width: 4% !important;
+  transition: 0.5s ease-out;
+}
+
+.expanded {
+  transition: 0.5s ease-out;
+}
+
+.collapsedButton {
+  height: 7%;
+  width: 85%;
+  border-radius: 12px;
+  margin-top: auto;
+  margin-bottom: 5%;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-size: 2em;
+  transition: 0.3s ease-out;
+}
+
+.expandedButton {
+  height: 10%;
+  width: 35%;
+  border-radius: 12px;
+  margin-top: auto;
+  margin-bottom: 5%;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-size: 2em;
+  transition: 0.5s ease-out;
+}
+
+.collapsed #inner-navbar-wrapper > * {
+  display: none;
+}
+
+a {
+  color: #fff !important;
+}
+a:hover {
+  color: gray !important;
+}

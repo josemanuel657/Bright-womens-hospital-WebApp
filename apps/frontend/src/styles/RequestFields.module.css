@@ -1,0 +1,42 @@
+.doubleInputRow {
+  display: flex;
+  flex-direction: row;
+  padding: 0 4%;
+}
+
+.spaceAbove {
+  margin-top: 2%;
+}
+
+.footer {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.8em;
+  color: darkgray;
+  padding: 1% 4%;
+  margin-bottom: 0;
+}
+
+.descriptionField {
+  padding: 0 4%;
+  margin-top: 2%;
+}
+
+.inputRow {
+  padding: 0 4%;
+}
+
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+}
+
+.divider {
+  margin: 2vh 1vw 2vh 1vw;
+}
+
+.priorityStatus {
+  margin-top: 2%;
+}
