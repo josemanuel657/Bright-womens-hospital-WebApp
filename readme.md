@@ -60,7 +60,16 @@ Computer Science Department
 Worcester Polytechnic Institute  
 Email: wwong2@wpi.edu
 
+## Interface Screenshots
 
+Here are some screenshots of the application in action:
+
+![Main Screen](overview/1.png)
+![Main Screen](overview/2.png)
+![Main Screen](overview/3.png)
+![Main Screen](overview/4.png)
+![Main Screen](overview/5.png)
+![Main Screen](overview/6.png)
 
 # Engineering and configurations
 
