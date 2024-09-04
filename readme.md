@@ -45,21 +45,6 @@ The application is designed to enhance both guest and employee experiences withi
 - **Project Role:**
   - **Jose Manuel Perez Jimenez** served as an assistant lead software engineer, contributing significantly to the pathfinding and map-building components of the application. His responsibilities included gathering software requirements, creating UML diagrams, implementing core algorithms, and deploying the application.
 
-## Testimonials
-
-- **Instructor Feedback:**
-  - Jose was recognized as an outstanding full-stack, assistant lead engineer. His contributions were pivotal to the success of the project, with peers noting his exceptional coding skills and work ethic.
-
-## Contact Information
-
-For any questions regarding the project, please contact:
-
-**Wilson Wong, Ph.D.**  
-Associate Teaching Professor  
-Computer Science Department  
-Worcester Polytechnic Institute  
-Email: wwong2@wpi.edu
-
 ## Interface Screenshots
 
 Here are some screenshots of the application in action:
@@ -499,10 +484,12 @@ slowing things down temporarily.
 Packages contains packages that the front/back end rely on, including code
 they share. Changes to `Packages` will automatically be reflected in both the front and back ends
 
-### scripts
+## Contact Information
 
-This folder contains utility scripts used by the Yarn scripts:
+For any questions regarding the project, please contact:
 
-- `commandRunner.mjs` exports a function to execute an array of shell commands in sequence.
-- `fix.mjs` cleans the Yarn cache, removes `node_modules`, reinstalls dependencies, and rebuilds the development environment.
-- `sync.mjs` automatically syncs the current branch with the latest `main` branch by committing, pushing, fetching `main`, merging it in, and pushing the result.
+**Wilson Wong, Ph.D.**  
+Associate Teaching Professor  
+Computer Science Department  
+Worcester Polytechnic Institute  
+Email: wwong2@wpi.edu
