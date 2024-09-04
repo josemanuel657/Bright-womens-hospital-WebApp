@@ -1,4 +1,68 @@
-# Softeng Starter Code Repo
+# Brigham and Women's Hospital Pathfinding and Service Management System
+
+This full-stack web application prototype was developed as part of the CS3733 Software Engineering course at Worcester Polytechnic Institute (WPI) in collaboration with Brigham & Women’s Hospital. The project was a team effort involving ten to eleven students applying Agile methodologies, software design patterns, and functional programming over an eight-week period.
+
+## Project Overview
+
+The application is designed to enhance both guest and employee experiences within the hospital environment. It provides features such as secure authentication, interactive pathfinding, service request management, and a map editor for maintaining the hospital layout.
+
+## Key Features
+
+- **User Authentication:**
+  - Secure login system for hospital staff and guests.
+  - Role-based access to different features, ensuring data security.
+
+- **Guest Pathfinding:**
+  - **Interactive Map:** Guests can select two locations within the hospital and receive the shortest path.
+  - **Algorithm Options:** Users can choose between various pathfinding algorithms like BFS, DFS, Dijkstra, and A*.
+  - **Accessibility:** Routes include options for accessible paths.
+
+- **Service Request Management:**
+  - **Dashboard:** Employees can manage and update the status of service requests.
+  - **Request Creation:** Staff can create new service requests, specifying details such as type, location, and priority.
+
+- **Database Management:**
+  - **Employee Management:** Admins can manage employee data, including adding and editing employee details.
+  - **Map Editor:** A tool for maintaining the hospital's layout, allowing employees to add nodes and edges on the map.
+
+- **Statistics and Reporting:**
+  - **Service Request Reports:** Visual and statistical reports on service requests by type, priority, and user.
+
+- **High Score Leaderboards:**
+  - **Gamification:** Leaderboards track employee performance, adding a competitive element to task completion.
+
+## Development Process
+
+- **Coursework Context:**
+  - The project was part of WPI’s rigorous CS3733 Software Engineering course, which required teams to create a web application for an industry collaborator using contemporary software frameworks and tools.
+
+- **Tech Stack:**
+  - **Frontend:** React.js, Material UI, Typescript
+  - **Backend:** Express.js, Prisma ORM
+  - **Database:** PostgreSQL
+  - **Deployment:** Docker, AWS EC, AWS RDS
+
+- **Project Role:**
+  - **Jose Manuel Perez Jimenez** served as an assistant lead software engineer, contributing significantly to the pathfinding and map-building components of the application. His responsibilities included gathering software requirements, creating UML diagrams, implementing core algorithms, and deploying the application.
+
+## Testimonials
+
+- **Instructor Feedback:**
+  - Jose was recognized as an outstanding full-stack, assistant lead engineer. His contributions were pivotal to the success of the project, with peers noting his exceptional coding skills and work ethic.
+
+## Contact Information
+
+For any questions regarding the project, please contact:
+
+**Wilson Wong, Ph.D.**  
+Associate Teaching Professor  
+Computer Science Department  
+Worcester Polytechnic Institute  
+Email: wwong2@wpi.edu
+
+
+
+# Engineering and configurations
 
 This document contains an outline of
 the entire repo, the tooling in the
